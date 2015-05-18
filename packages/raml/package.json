@@ -1,0 +1,34 @@
+{
+  "name": "raml",
+  "version": "0.1.0",
+  "description": "RAML Package for ATOM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n4ch03/atom-raml"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# raml package\n\nA short description of your package.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/n4ch03/atom-raml/issues"
+  },
+  "homepage": "https://github.com/n4ch03/atom-raml",
+  "_id": "raml@0.1.0",
+  "_shasum": "88b1af61c3278729566cf720bc0d1771d0759825",
+  "_resolved": "file:../d-115417-14626-1r8zii3/package.tgz",
+  "_from": "../d-115417-14626-1r8zii3/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

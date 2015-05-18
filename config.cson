@@ -1,0 +1,49 @@
+"*":
+  editor:
+    invisibles:
+      {}
+    fontFamily: "AnonymousPro"
+    fontSize: 12
+    showInvisibles: true
+    showIndentGuide: true
+    preferredLineLength: 120
+    useShadowDOM: false
+    lineHeight: 1
+  core:
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
+  "exception-reporting":
+    userId: "945a6a94-6c68-2202-46af-428d3a0831bf"
+  welcome:
+    showOnStartup: false
+  linter:
+    {}
+  "go-plus":
+    {}
+  "block-cursor":
+    primaryColor:
+      red: 255
+      green: 48
+      blue: 158
+      alpha: 1
+    blinkInterval: 0
+    cursorType: "bordered-box"
+  "highlight-selected":
+    highlightBackground: true
+".html.mustache.text":
+  editor:
+    preferredLineLength: 120
+".mustache.source.sql":
+  editor:
+    preferredLineLength: 120
+".raml.source":
+  editor:
+    preferredLineLength: 120
+".shell-session.text":
+  editor:
+    preferredLineLength: 120
+".shell.source":
+  editor:
+    preferredLineLength: 120

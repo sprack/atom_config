@@ -1,0 +1,177 @@
+@white: #FFFFFF;
+@blue: #66D9EF;
+@baby-blue: #96CBFE;
+@select-blue: #0066CC;
+@pink: #FF0066;
+@orange: #de935f;
+@gutter: #F8F8F2;
+@dark: #0D0D0D;
+@comment: #75715E;
+@string: #E6DB74;
+@const: #AE81FF;
+@keyword: #F92672;
+@storage: @keyword;
+@tag: @keyword;
+// @cursor: #F8F8F0;
+@cursor: @pink;
+@invalid: @cursor;
+@invalid-bg: @keyword;
+@class: #A6E22E;
+@function: @class;
+@attribute: @class;
+@parameter: #FD971F;
+
+:host, atom-text-editor {
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: @dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .wrap-guide {
+    background: fade(@white, 15%);
+  }
+
+  .indent-guide {
+    color: fade(@white, 25%);
+  }
+
+  &, .gutter {
+    background-color: @dark;
+    color: white;
+  }
+
+  &.is-focused .cursor {
+    border-color: @cursor;
+  }
+
+  &.is-focused .selection .region {
+    // background-color: lighten(@dark, 20%);
+    color: @white;
+    background-color: @select-blue;
+  }
+
+  &.is-focused .line-number.cursor-line-no-selection,
+  &.is-focused .line.cursor-line {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .comment {
+    color: @comment;
+  }
+
+  .string {
+    color: @string;
+  }
+
+  .constant.numeric {
+    color: @const;
+  }
+
+  .constant.language {
+    color: @const;
+  }
+
+  .constant.character,
+  .constant.other {
+    color: @const;
+  }
+
+  .variable {
+  }
+
+  .keyword {
+    color: @keyword;
+  }
+
+  .storage {
+    color: @storage;
+  }
+
+  .storage.type {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .entity.name.class {
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .entity.other.inherited-class {
+    font-style: italic;
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .entity.name.function {
+    color: @function;
+  }
+
+  .variable.parameter {
+    font-style: italic;
+    color: @parameter;
+  }
+
+  .entity.name.tag {
+    color: @tag;
+  }
+
+  .entity.other.attribute-name {
+    color: @attribute;
+  }
+
+  .support.function {
+    color: @blue;
+  }
+
+  .support.constant {
+    color: @blue;
+  }
+
+  .support.type,
+  .support.class {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .invalid {
+    color: @invalid;
+    background-color: @invalid-bg;
+  }
+
+  .invalid.deprecated {
+    color: @invalid;
+    background-color: @const;
+  }
+
+  .search-results .marker .region {
+    background-color: grey;
+    border: 1px solid @orange;
+  }
+
+  .search-results .marker.current-result .region {
+    border: 1px solid @orange;
+  }
+
+}
+
+atom-text-editor::shadow {
+    .is-focused .selection .region {
+      // background-color: lighten(@dark, 20%);
+      background-color: @baby-blue;
+    }
+
+    .is-focused .line-number.cursor-line-no-selection,
+    .is-focused .line.cursor-line {
+      // background-color: lighten(@dark, 10%);
+      background-color: @baby-blue;
+    }
+}
