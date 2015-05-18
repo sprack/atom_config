@@ -47,3 +47,4 @@
 ".shell.source":
   editor:
     preferredLineLength: 120
+    tabLength: 4
