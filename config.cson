@@ -1,18 +1,25 @@
 "*":
   editor:
     invisibles:
-      {}
+      cr: "↩"
+      tab: "⇥"
+      eol: " "
     fontFamily: "AnonymousPro"
     fontSize: 12
-    showInvisibles: true
     showIndentGuide: true
     preferredLineLength: 120
     useShadowDOM: false
     lineHeight: 1
+    showInvisibles: true
+    autoIndentOnPaste: false
   core:
     themes: [
       "atom-dark-ui"
       "monokai"
+    ]
+    disabledPackages: [
+      "go-plus"
+      "block-cursor"
     ]
   "exception-reporting":
     userId: "945a6a94-6c68-2202-46af-428d3a0831bf"
@@ -32,6 +39,7 @@
     cursorType: "bordered-box"
   "highlight-selected":
     highlightBackground: true
+    hideHighlightOnSelectedWord: true
 ".html.mustache.text":
   editor:
     preferredLineLength: 120
