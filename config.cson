@@ -3,32 +3,33 @@
     invisibles:
       cr: "↩"
       tab: "⇥"
-      eol: " "
+      eol: "¶"
+      space: "∙"
     fontFamily: "AnonymousPro"
     fontSize: 12
     showIndentGuide: true
     preferredLineLength: 120
-    useShadowDOM: false
+    useShadowDOM: true
     lineHeight: 1
     showInvisibles: true
     autoIndentOnPaste: false
+    softWrap: true
   core:
     themes: [
       "atom-dark-ui"
       "monokai"
     ]
     disabledPackages: [
-      "go-plus"
       "block-cursor"
+      "go-plus"
     ]
   "exception-reporting":
     userId: "945a6a94-6c68-2202-46af-428d3a0831bf"
   welcome:
     showOnStartup: false
   linter:
-    {}
-  "go-plus":
-    {}
+    lintOnFly: false
+  "go-plus": {}
   "block-cursor":
     primaryColor:
       red: 255
@@ -40,6 +41,16 @@
   "highlight-selected":
     highlightBackground: true
     hideHighlightOnSelectedWord: true
+  tabs:
+    showIcons: false
+    usePreviewTabs: true
+  "sublime-tabs":
+    showIcons: false
+  "white-cursor":
+    darkThemes: [
+      "Atom Dark"
+    ]
+  "git-diff": {}
 ".html.mustache.text":
   editor:
     preferredLineLength: 120
@@ -55,4 +66,4 @@
 ".shell.source":
   editor:
     preferredLineLength: 120
-    tabLength: 4
+    tabLength: 2
